@@ -31,7 +31,7 @@ print('version of keras: {}'.format(keras.__version__))
 
 ''' global variables '''
 # g_data_root  = '/home/h_lai/Documents/dl/reid/triplet/datasets'
-g_data_root = '../datasets'
+g_data_root = './datasets'
 # g_output_dir = './output'
 g_output_dir = './output/cross_ds_v'
 mkdir_if_missing(g_output_dir)
