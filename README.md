@@ -23,18 +23,26 @@ The pre-requisites to prepare the environment is located in environment.yml.
 
 ## Prepare 
 
-
-
-Before you run, you need to speicify the dataset directory in your local machine. Go to the `reid.py` file,
+Before you run, you need to specify the dataset directory in your local machine. Go to the `reid.py` file,
 check the global variable named `g_data_root`. If you don't have the dataset yet, you can get the dataset by
-using the srcipt in the `datasets` folder. If you do so, set `g_data_root = './datasets'`.
+using the script in the `datasets` folder. If you do so, set `g_data_root = './datasets'`.
+
+To download the test dataset go to:  datasets/ and run get_dataset_market1501.sh
 
 To train or try the model out, go to the very end of the `reid.py` file. Comment the method you don't want
-and uncomment the method you want then launch the terminal and run:
+and uncomment the method you want
 
-```
-python reid.py
-```
+*** IMPORTANT ***
+Modify the script openiss-2-speed.sh to setup the job to be ready for CPUs or GPUs nodes; h_vmem= and gpu= CAN'T be enabled at the same time
+
+## Run
+
+On CPUs nodes: qsub ./openiss-2-speed.sh
+On GPUs nodes: qsub -q g.q ./openiss-2-speed.sh
+
+## Results
+The result files are located in output/cross_ds_v/
+
 
 ## Theory
 
