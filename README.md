@@ -18,9 +18,13 @@ See also: [openiss-yolov3](https://github.com/OpenISS/openiss-yolov3).
 ## Environment
 
 In our Speed cluster using GPUs, it could take up to 4 days to complete the training at 120 epochs.
+
 TEST DATASET: Market1501
+
 ---- Train images: 12936
+
 ---- Query images: 3368
+
 ---- Gallery images: 15913
 
 The pre-requisites to prepare the environment is located in `environment.yml`.
