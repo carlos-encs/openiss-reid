@@ -16,6 +16,7 @@
 #$ -l gpu=2
 
 # Execute the script
-
-conda activate /speed-scratch/carlos/myconda
+module load anaconda/default
+conda env create -f environment.yml -p /speed-scratch/carlos/condax
+conda activate /speed-scratch/carlos/condax
 python reid.py

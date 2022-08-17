@@ -110,6 +110,7 @@ tmp_ft = GlobalAveragePooling2D(name='triplet')(g_base.output)
 # tmp_fi = BatchNormalization(scale=False)(tmp_ft)
 tmp_fi = BatchNormalization()(tmp_ft)
 feat_model = Model(inputs=g_base.input, outputs=tmp_fi)
+
 # feat_model = Model(inputs=base.input, outputs=feature_t)
 
 tmp_pred = Dense(g_num_classes, activation='softmax',
