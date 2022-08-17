@@ -17,6 +17,7 @@
 
 # Execute the script
 module load anaconda/default
-conda env create -f environment.yml -p /speed-scratch/carlos/condax
-conda activate /speed-scratch/carlos/condax
+conda env create -f environment.yml -p /speed-scratch/$USER/reid-venv
+conda activate /speed-scratch/$USER/reid-venv
 python reid.py
+conda env remove -p /speed-scratch/$USER/reid-venv
