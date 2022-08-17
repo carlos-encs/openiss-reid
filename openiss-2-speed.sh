@@ -12,7 +12,10 @@
 # Set output directory to current
 #$ -cwd
 
-# Request gpu
+# Request CPU
+# #$ -l h_vmem=32G
+
+# Request GPU
 #$ -l gpu=2
 
 # Execute the script
@@ -20,4 +23,5 @@ module load anaconda/default
 conda env create -f environment.yml -p /speed-scratch/$USER/reid-venv
 conda activate /speed-scratch/$USER/reid-venv
 python reid.py
+conda deactivate
 conda env remove -p /speed-scratch/$USER/reid-venv

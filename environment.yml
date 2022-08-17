@@ -1,3 +1,6 @@
+# if not using GPUs comment/remove:
+# cudatoolkit=9.0, cudnn=7, tensorflow-gpu==1.12.0
+#
 name: myconda
 channels:
 - anaconda
