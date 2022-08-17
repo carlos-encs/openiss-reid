@@ -15,24 +15,15 @@ master's thesis:
 
 See also: [openiss-yolov3](https://github.com/OpenISS/openiss-yolov3).
 
-## Enviornment
+## Environment
 
-A powerful GPU is required for running the code, with Nivida GTX 1070ti, a training with the standard 120 epochs
-will take almost 4 hours.
+In our Speed cluster using GPUs, it could take up to 4 days to complete the training at 120 epochs.
 
-This implementatoin is based on tensorflow and keras (currently not other backend are suppoted rather
-than `tf`), the tested version are listed below:
+The pre-requisites to prepare the environment is located in environment.yml.
 
-- python:               3.6.7
-- tensorflow:           1.12.0
-- tensorflow-base:      1.12.0
-- tensorflow-gpu:       1.12.0
-- keras:                2.2.4
-- keras-applications:   1.0.6
-- keras-base:           2.2.4
-- keras-preprocessing:  1.0.5
+## Prepare 
 
-## Run
+
 
 Before you run, you need to speicify the dataset directory in your local machine. Go to the `reid.py` file,
 check the global variable named `g_data_root`. If you don't have the dataset yet, you can get the dataset by
