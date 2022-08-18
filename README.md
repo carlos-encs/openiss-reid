@@ -31,7 +31,9 @@ The pre-requisites to prepare the environment is located in `environment.yml`.
 
 ## Prepare 
 
-Before you run, you need to specify the dataset directory in your local machine. Go to the `reid.py` file,
+Once logged into Speed, go to your speed-scratch directory:  `cd /speed-scratch/$USER/` and clone/download this git repository.
+
+Before you run the script, you need to specify the dataset directory in your local machine. Go to the `reid.py` file,
 check the global variable named `g_data_root`. If you don't have the dataset yet, you can get the dataset by
 using the script in the `datasets` folder. If you do so, set `g_data_root = './datasets'`.
 
